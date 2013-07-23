@@ -1,38 +1,19 @@
 package com.example.playerdemo;
 
 import java.io.File;
-
 import java.util.ArrayList;
-
 import java.util.HashMap;
-
-
-
 import android.app.Activity;
-
 import android.content.Intent;
-
 import android.os.Bundle;
-
 import android.os.Environment;
-
 import android.util.Log;
-
 import android.view.Menu;
-
 import android.view.MenuItem;
-
 import android.view.View;
-
 import android.widget.AdapterView;
-
-import android.widget.Button;
-
 import android.widget.ListView;
-
 import android.widget.SimpleAdapter;
-
-
 
 public class MovieList extends Activity{
 
@@ -66,10 +47,6 @@ public class MovieList extends Activity{
         SimpleAdapter adapter = new SimpleAdapter(this, name, R.layout.sd_list,
                 new String[] { "视频名称" }, new int[] { R.id.mp4 });
         lv.setAdapter(adapter);
-
-        for (int i = 0; i < name.size(); i++) {
-            Log.i("zeng", "list.  name:  " + name.get(i));
-        }
 
         lv.setOnItemClickListener(new ListView.OnItemClickListener(){
 
@@ -109,7 +86,7 @@ public class MovieList extends Activity{
         switch(item.getItemId()){
             case UPDATE:
                 File path = Environment.getExternalStorageDirectory();// 获得SD卡路径
-                File[] files = path.listFiles();// 读取
+                File[] files = path.listFiles();      // 读取
                 getFileName(files);                   //更新列表
                 break;
 
@@ -124,39 +101,24 @@ public class MovieList extends Activity{
     private void getFileName(File[] files) {   //仅搜索当前目录下的文件
         if (files != null) {// 先判断目录是否为空，否则会报空指针
             for (File file : files) {
-                /* if (file.isDirectory()) {
-                    Log.i("zeng", "若是文件目录。继续读1" + file.getName().toString()
-                            + file.getPath().toString());
+                if (file.isDirectory()) {
+                    //递归调用，读取存储卡中的所有视频文件
                     getFileName(file.listFiles());
-                    Log.i("zeng", "若是文件目录。继续读2" + file.getName().toString()
-                            + file.getPath().toString());
                 } else {
-                   */
-                String fileName = file.getName();
 
-                if (fileName.endsWith(".mp4")||fileName.endsWith(".3gp")) {
+                    String fileName = file.getName();
 
-                    HashMap map = new HashMap();
+                    if (fileName.endsWith(".mp4")||fileName.endsWith(".3gp")) {
 
-                    String s = fileName.substring(0,
-                            fileName.lastIndexOf(".")).toString();
+                        HashMap map = new HashMap();
 
-                    Log.i("zeng", "文件名mp4或3gp：：   " + s);
+                        map.put("视频名称", file.getPath().substring(path.length()));
 
-                    map.put("视频名称", fileName);
+                        name.add(map);
 
-                    name.add(map);
-
+                    }
                 }
-
             }
-
         }
-
-        //}
-
     }
-
-
-
 }

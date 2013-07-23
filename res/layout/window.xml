@@ -69,7 +69,5 @@
                     android:layout_marginRight="5dip"/>
 
         </LinearLayout>
-
     </LinearLayout>
-
 </RelativeLayout>

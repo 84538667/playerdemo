@@ -24,6 +24,7 @@ public class Myvideoplayer extends Activity implements SurfaceHolder.Callback{
     boolean isPause = false;
     public static String path;
     SurfaceHolder surfaceHolder;
+    int duration = -1;
     MediaPlayer mediaPlayer;
     SurfaceView surfaceView;
     private Intent floatingwindow = null;
@@ -47,7 +48,7 @@ public class Myvideoplayer extends Activity implements SurfaceHolder.Callback{
         mediaPlayer = new MediaPlayer();
 
         mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
-
+        mediaPlayer.setScreenOnWhilePlaying(true);
         //mediaPlayer.setDisplay(surfaceHolder);//设置Video影片以SurfaceHolder播放
         mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
 
@@ -113,6 +114,28 @@ public class Myvideoplayer extends Activity implements SurfaceHolder.Callback{
         try{
             mediaPlayer.setDataSource(path);   //设置MediaPlayer的数据源
             mediaPlayer.prepare();             //准备
+            duration = mediaPlayer.getDuration();
+            //本想根据视频尺寸调整分辨率，结果失败了。为什么呢？
+            //我只想说那个setFixedSize根本不能用好不
+//            int height = mediaPlayer.getVideoHeight();
+//            int width = mediaPlayer.getVideoWidth();
+//            Log.i("width",""+ width);
+//            Log.i("height",""+ height);
+//            int h , w;
+//            float n;
+//            if( (float)(height / width) < 1.5 ){
+//                n = (float) height / 640;
+//                h = (int) (height / n);
+//                w = (int) (width / n);
+//            }else{
+//                 n = (float)width / 960;
+//                h = (int) (height / n);
+//                w = (int) (width / n) ;
+//            }
+//            Log.i("width1",""+ w);
+//            Log.i("height1",""+ h);
+//            surfaceHolder.setFixedSize(600, 500);
+
             mediaPlayer.start();               //播放                                                        s
             //应保证在mediaPlayer.start()后调用，据说问题不大但是我那边调用会报错
             //不添加这个掉哟个视频也可以正常播放，所以他是用来干什么的？

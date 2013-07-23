@@ -23,6 +23,10 @@
       </GlobalState>
     </option>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="height" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="INFO" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="c6060cad-2251-4250-ac0d-38aad52ef040" name="Default" comment="" />
     <ignored path="playerdemo.iws" />
@@ -30,13 +34,14 @@
     <file path="/a.xml" changelist="c6060cad-2251-4250-ac0d-38aad52ef040" time="1374544330231" ignored="false" />
     <file path="/sd_list.xml" changelist="c6060cad-2251-4250-ac0d-38aad52ef040" time="1374544399582" ignored="false" />
     <file path="/main.xml" changelist="c6060cad-2251-4250-ac0d-38aad52ef040" time="1374544511695" ignored="false" />
-    <file path="/window.xml" changelist="c6060cad-2251-4250-ac0d-38aad52ef040" time="1374565486839" ignored="false" />
+    <file path="/window.xml" changelist="c6060cad-2251-4250-ac0d-38aad52ef040" time="1374567484004" ignored="false" />
     <file path="/fragment.java" changelist="c6060cad-2251-4250-ac0d-38aad52ef040" time="1374547881322" ignored="false" />
     <file path="/AndroidManifest.xml" changelist="c6060cad-2251-4250-ac0d-38aad52ef040" time="1374547616877" ignored="false" />
-    <file path="/MovieList.java" changelist="c6060cad-2251-4250-ac0d-38aad52ef040" time="1374549281574" ignored="false" />
-    <file path="/Myvideoplayer.java" changelist="c6060cad-2251-4250-ac0d-38aad52ef040" time="1374563570080" ignored="false" />
+    <file path="/MovieList.java" changelist="c6060cad-2251-4250-ac0d-38aad52ef040" time="1374570091491" ignored="false" />
+    <file path="/Myvideoplayer.java" changelist="c6060cad-2251-4250-ac0d-38aad52ef040" time="1374572059514" ignored="false" />
     <file path="/thumb.xml" changelist="c6060cad-2251-4250-ac0d-38aad52ef040" time="1374564264771" ignored="false" />
     <file path="/seekbar_style.xml" changelist="c6060cad-2251-4250-ac0d-38aad52ef040" time="1374566068317" ignored="false" />
+    <file path="/FloatingService.java" changelist="c6060cad-2251-4250-ac0d-38aad52ef040" time="1374567552504" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,43 +102,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="thumb.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/thumb.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="240" selection-end="240" vertical-scroll-proportion="-5.428571">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MovieList.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/playerdemo/MovieList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="0" selection-start="2624" selection-end="2624" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="123" column="0" selection-start="3987" selection-end="3987" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="window.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/window.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="18" selection-start="1367" selection-end="1367" vertical-scroll-proportion="-1.8928572">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Myvideoplayer.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/example/playerdemo/Myvideoplayer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="55" selection-start="801" selection-end="801" vertical-scroll-proportion="0.28099173">
+            <state line="11" column="25" selection-start="375" selection-end="375" vertical-scroll-proportion="-1.8319559">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FloatingService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/playerdemo/FloatingService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="48" selection-start="749" selection-end="749" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -145,24 +137,6 @@
         <entry file="file://$PROJECT_DIR$/res/drawable/play.png">
           <provider selected="true" editor-type-id="images">
             <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="profiles_settings.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/copyright/profiles_settings.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="scope_settings.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/scopes/scope_settings.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="12" selection-start="139" selection-end="139" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
           </provider>
         </entry>
       </file>
@@ -181,13 +155,13 @@
         <option value="$PROJECT_DIR$/src/com/example/playerdemo/MyActivity.java" />
         <option value="$PROJECT_DIR$/gen/com/jinan/kernel/R.java" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/src/com/example/playerdemo/FloatingService.java" />
-        <option value="$PROJECT_DIR$/src/com/example/playerdemo/Myvideoplayer.java" />
         <option value="$PROJECT_DIR$/res/layout/thumb.xml" />
         <option value="$PROJECT_DIR$/res/layout/list.xml" />
-        <option value="$PROJECT_DIR$/src/com/example/playerdemo/MovieList.java" />
-        <option value="$PROJECT_DIR$/res/layout/window.xml" />
         <option value="$PROJECT_DIR$/res/layout/seekbar_style.xml" />
+        <option value="$PROJECT_DIR$/src/com/example/playerdemo/FloatingService.java" />
+        <option value="$PROJECT_DIR$/res/layout/window.xml" />
+        <option value="$PROJECT_DIR$/src/com/example/playerdemo/MovieList.java" />
+        <option value="$PROJECT_DIR$/src/com/example/playerdemo/Myvideoplayer.java" />
       </list>
     </option>
   </component>
@@ -261,6 +235,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="playerdemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="playerdemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="playerdemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="playerdemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -277,6 +283,7 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="newone" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="dynamic.classpath" value="false" />
@@ -503,8 +510,28 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -519,12 +546,12 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31965813" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991454" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991454" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24279211" sideWeight="0.6700855" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32991454" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991454" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -596,16 +623,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="16" selection-start="271" selection-end="282" vertical-scroll-proportion="0.42222223">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/sd_list.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="41" selection-start="405" selection-end="405" vertical-scroll-proportion="0.6333333">
@@ -624,22 +641,6 @@
       </provider>
       <provider editor-type-id="android-designer">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/playerdemo/FloatingService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="41" selection-start="2874" selection-end="2874" vertical-scroll-proportion="0.33241758">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/playerdemo/MovieList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="0" selection-start="2624" selection-end="2624" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/thumb.xml">
@@ -691,9 +692,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://G:/android/android-sdk/platforms/android-10/android.jar!/android/media/MediaPlayer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="22" selection-start="2977" selection-end="2977" vertical-scroll-proportion="-0.5521472">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/seekbar_style.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="54" selection-start="641" selection-end="641" vertical-scroll-proportion="0.6238806">
+        <state line="21" column="55" selection-start="839" selection-end="839" vertical-scroll-proportion="-5.0">
           <folding />
         </state>
       </provider>
@@ -703,7 +711,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/window.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="18" selection-start="1367" selection-end="1367" vertical-scroll-proportion="-1.8928572">
+        <state line="7" column="47" selection-start="285" selection-end="285" vertical-scroll-proportion="-4.75">
           <folding />
         </state>
       </provider>
@@ -711,12 +719,28 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/playerdemo/Myvideoplayer.java">
+    <entry file="file://$PROJECT_DIR$/src/com/example/playerdemo/FloatingService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="55" selection-start="801" selection-end="801" vertical-scroll-proportion="0.28099173">
+        <state line="23" column="48" selection-start="749" selection-end="749" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/playerdemo/MovieList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="123" column="0" selection-start="3987" selection-end="3987" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/playerdemo/Myvideoplayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="25" selection-start="375" selection-end="375" vertical-scroll-proportion="-1.8319559">
+          <folding />
         </state>
       </provider>
     </entry>
