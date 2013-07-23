@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:gravity="center">
+
+        <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/progress"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:progressDrawable="@layout/seekbar_style"
+                android:thumb="@layout/thumb"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="10dip">
+
+            <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/forward"
+                    android:background="#88000000"
+                    android:src="@drawable/forward"
+                    android:layout_marginRight="5dip"/>
+
+            <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/backward"
+                    android:src="@drawable/backward"
+                    android:background="#88000000"
+                    android:layout_marginRight="5dip"/>
+
+            <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/play"
+                    android:src="@drawable/play"
+                    android:background="#88000000"
+                    android:layout_marginRight="5dip"/>
+
+            <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pause"
+                    android:src="@drawable/pause"
+                    android:background="#88000000"
+                    android:layout_marginRight="5dip"/>
+
+            <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#88000000"
+                    android:id="@+id/quitthis"
+                    android:src="@drawable/quit"
+                    android:layout_marginRight="5dip"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+          package="com.example.playerdemo"
+
+          android:versionCode="1"
+
+          android:versionName="1.0" >
+
+
+
+    <uses-sdk android:minSdkVersion="10" />
+
+
+
+    <application
+            android:label="@string/app_name" >
+
+        <activity
+
+                android:name=".MovieList"
+
+                android:label="@string/app_name">
+
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN" />
+
+
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+
+        </activity>
+
+        <activity
+
+                android:name=".Myvideoplayer"
+
+                android:label="@string/app_name"
+
+                android:screenOrientation="landscape"
+
+                android:configChanges="orientation|keyboardHidden">
+
+            <!--
+
+           <intent-filter>
+
+               <action android:name="android.intent.action.MAIN" />
+
+
+
+               <category android:name="android.intent.category.LAUNCHER" />
+
+           </intent-filter>
+
+             -->
+
+        </activity>
+
+        <activity android:name=".Transparent"
+
+                  android:screenOrientation="landscape"
+
+                  android:configChanges="orientation|keyboardHidden">
+
+            <!-- android:theme="@style/translucent" 为自定义的样式，实现透明窗效果 -->
+
+        </activity>
+
+        <service android:name=".FloatingService" android:enabled="true">
+
+        </service>
+
+        <!-- 广播静态注册
+
+              <receiver android:name=".MyBroadcastReceiver">
+
+                      <intent-filter>
+
+                          <action android:name="android.intent.action.MyVideoPlayer"></action>
+
+                          <category android:name="android.intent.category.LAUNCHER" />
+
+                      </intent-filter>
+
+              </receiver>
+
+         -->
+
+    </application>
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+</manifest>
